@@ -3,11 +3,11 @@
 Auto updater for Axstin's fps unlocker since it didn't have one. 
 Probably already exists, but whatever. 
 
-Instructions: 
-1, Extract into clean folder*,  
-2, run exe, 
-3, follow instructions displayed, 
-4, done. 
+Instructions:  
+1, Extract into clean folder*,   
+2, run exe,  
+3, follow instructions displayed,  
+4, done.  
 
 *not necessary
 
