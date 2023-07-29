@@ -41,10 +41,11 @@ namespace AutoRobloxFPSUnlocker
                 {
                     Logger.LogInfo("AutoRobloxFPSUnlocker");
                     Logger.LogSuccess("Made by mart111n (discord)");
+                        Logger.LogSuccess($"Current Updater Version: {Config.Default.Version}");
                     Logger.LogSuccess("Mostly for convenience, actual effort by axstin (github)");
 
                     Console.WriteLine();
-                    Logger.LogCritical($"Version Installed: {Config.Default.InstalledVersion}");
+                    Logger.LogCritical($"FPS Unlocker Version Installed: {Config.Default.InstalledVersion}");
                     Logger.LogCritical($"In Startup: {Config.Default.InStartup}");
                     Logger.LogInfo("Press any key to exit.");
                     Console.ReadKey();
@@ -67,7 +68,24 @@ namespace AutoRobloxFPSUnlocker
 
         internal static void UpdateSelf()
         {
-
+            // Get the latest version
+            var client = new GitHubClient(new ProductHeaderValue("autofpsunlockerupdater"));
+            var releases = client.Repository.Release.GetAll("MartinPrograms", "autofpsunlockerupdater").Result;
+            var latestRelease = releases[0];
+            var assets = latestRelease.Assets;
+            var asset = assets[0];
+            var downloadUrl = asset.BrowserDownloadUrl;
+            var fileName = asset.Name;
+            var filePath = Path.Combine(Environment.CurrentDirectory, fileName);
+            var webClient = new WebClient();
+            webClient.DownloadFile(downloadUrl, filePath);
+            Logger.LogInfo("Update Downloaded!");
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = "powershell";
+            startInfo.Arguments = $"echo Extracting in 3 seconds;start-sleep(3);Expand-Archive {fileName} -DestinationPath {Directory.GetCurrentDirectory()} -Force; echo Opening!; Start-Process ./AutoRobloxFPSUnlocker.exe --info";
+            startInfo.Verb = "runas";
+            Process.Start(startInfo);
+            Environment.Exit(0);
         }
     }
 
