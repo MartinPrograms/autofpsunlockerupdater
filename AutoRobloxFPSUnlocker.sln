@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoRobloxFPSUnlocker", "AutoRobloxFPSUnlocker\AutoRobloxFPSUnlocker.csproj", "{3C21652C-489B-4DC6-83F9-A640EA542884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C21652C-489B-4DC6-83F9-A640EA542884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C21652C-489B-4DC6-83F9-A640EA542884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C21652C-489B-4DC6-83F9-A640EA542884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C21652C-489B-4DC6-83F9-A640EA542884}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {01647571-AD91-44CD-AAC4-0FC412AE1D2E}
+	EndGlobalSection
+EndGlobal
