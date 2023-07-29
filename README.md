@@ -1,7 +1,7 @@
 # autofpsunlockerupdater
  
-Auto updater for Axstin's fps unlocker since it didn't have one. 
-Probably already exists, but whatever. 
+Auto updater for Axstin's fps unlocker since it didn't have one.   
+Probably already exists, but whatever.   
 
 Instructions:  
 1, Extract into clean folder*,   
