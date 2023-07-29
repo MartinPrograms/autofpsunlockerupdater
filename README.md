@@ -1,4 +1,4 @@
-# autofpsunlockerupdater
+# Roblox Auto FPS unlocker.
  
 Auto updater for Axstin's fps unlocker since it didn't have one.   
 Probably already exists, but whatever.   
